@@ -19,6 +19,7 @@ namespace Day6LogicalPrograms
                 Console.WriteLine("2. Perfect Number");
                 Console.WriteLine("3. Prime Number");
                 Console.WriteLine("4. Reverse Number");
+                Console.WriteLine("5. Coupon Numbers");
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Write your choice here : ");
 
@@ -37,6 +38,9 @@ namespace Day6LogicalPrograms
                         break;
                     case 4:
                         LogicalPrograms.ReverseNumber();
+                        break;
+                    case 5:
+                        LogicalPrograms.CouponNumbers();
                         break;
                     case 0:
                         Console.WriteLine("Exiting...");

@@ -95,5 +95,32 @@ namespace Day6LogicalPrograms
             Console.WriteLine("Reversed number: " + reverse);
         }
 
+        public static void CouponNumbers()
+        {
+            Console.WriteLine("Enter the number of distinct coupon numbers:");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            int[] coupons = new int[n];
+            Random random = new Random();
+
+            int count = 0;
+            int distinctCount = 0;
+
+            while (distinctCount < n)
+            {
+                int randomNumber = random.Next(1, n + 1);
+
+                count++;
+
+                if (!coupons.Contains(randomNumber))
+                {
+                    coupons[distinctCount] = randomNumber;
+                    distinctCount++;
+                }
+
+            }
+            Console.WriteLine("Total random numbers needed: " + count);
+        }
+        
     }
 }
