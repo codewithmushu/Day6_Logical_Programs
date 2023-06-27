@@ -121,6 +121,23 @@ namespace Day6LogicalPrograms
             }
             Console.WriteLine("Total random numbers needed: " + count);
         }
-        
+
+        public static void StopwatchProgram()
+        {
+            Console.WriteLine("Press any key to start the stopwatch...");
+            Console.ReadKey();
+
+            DateTime startTime = DateTime.Now;
+
+            Console.WriteLine("Press any key to stop the stopwatch...");
+            Console.ReadKey();
+
+            DateTime stopTime = DateTime.Now;
+
+            TimeSpan elapsedTime = stopTime - startTime;
+
+            Console.WriteLine("Elapsed time: " + elapsedTime.TotalSeconds + " seconds");
+        }
+
     }
 }
