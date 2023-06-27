@@ -16,6 +16,7 @@ namespace Day6LogicalPrograms
             {
                 Console.WriteLine("Select an option:");
                 Console.WriteLine("1. Fibonacci Series");
+                Console.WriteLine("2. Perfect Number");
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Write your choice here : ");
 
@@ -25,6 +26,9 @@ namespace Day6LogicalPrograms
                 {
                     case 1:
                         LogicalPrograms.FibonacciSeries();
+                        break;
+                    case 2:
+                        LogicalPrograms.PerfectNumber();
                         break;
                     case 0:
                         Console.WriteLine("Exiting...");

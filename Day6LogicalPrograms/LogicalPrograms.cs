@@ -29,5 +29,24 @@ namespace Day6LogicalPrograms
 
             Console.WriteLine();
         }
+
+        public static void PerfectNumber()
+        {
+            Console.WriteLine("Enter a number:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            int sum = 0;
+
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                    sum += i;
+            }
+
+            if (sum == number)
+                Console.WriteLine("It is a perfect number.");
+            else
+                Console.WriteLine("It is not a perfect number.");
+        }
     }
 }
